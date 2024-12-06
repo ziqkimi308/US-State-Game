@@ -1,6 +1,4 @@
-# Project: I Am Learning Python
-
-### U.S. States Guessing Game
+# U.S. States Guessing Game
 
 - The U.S. States Guessing Game is an interactive Python game built using Turtle graphics and Pandas. It challenges players to guess all 50 U.S. states and marks them on a map. Players can type the name of the state, and if correct, it will appear on the map. The game saves any states that were not guessed, allowing the player to continue later.
 
