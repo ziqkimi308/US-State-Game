@@ -14,16 +14,20 @@ import turtle
 import pandas
 from pandas.core.interchange.dataframe_protocol import DataFrame
 
+# CONSTANT
+US_STATES_CSV = "./50_states.csv"
+BLANK_US_STATES_IMG = "./blank_states_img.gif"
+
 # Setup screen
 # call Screen class
 screen = turtle.Screen()
 screen.title("U.S State Game")
-image = "blank_states_img.gif"
+image = BLANK_US_STATES_IMG
 screen.addshape(image)
 turtle.shape(image)
 
 # Open csv
-data = pandas.read_csv("50_states.csv")
+data = pandas.read_csv(US_STATES_CSV)
 
 # Convert state column to list
 data_state = data["state"].to_list()
@@ -59,10 +63,3 @@ while len(guessed_state) < 50:
         # Goto that row's x and y coordinate and write the state name using .item()
         t.goto(int(answer_row.x), int(answer_row.y))
         t.write(answer_row.state.item())
-
-# Last screen
-
-
-
-
-
